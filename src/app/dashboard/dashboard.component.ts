@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { State } from '../model/spacecoffee.model';
-import * as moment from 'moment';
 import { Store, AppState } from '../service/store.service';
 import { PwaService } from '../service/pwa.service';
 

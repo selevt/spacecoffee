@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
-import { MatButtonModule, MatToolbarModule, MatExpansionModule, MatSnackBarModule } from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
     imports: [

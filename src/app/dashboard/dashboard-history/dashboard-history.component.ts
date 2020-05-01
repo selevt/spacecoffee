@@ -3,7 +3,7 @@ import * as moment from 'moment';
 import { Store, AppState } from 'src/app/service/store.service';
 import { Entry, Pause } from 'src/app/model/spacecoffee.model';
 import { DisplayTimer } from 'src/app/service/displaytimer.service';
-import { MatSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-dashboard-history',
