@@ -1,4 +1,4 @@
-# Spacecoffee
+# space 🚀 coffee
 
 Work/break timer application written in Angular.
 
