@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1588318225134,
+  "timestamp": 1588321558250,
   "index": "/spacecoffee/index.html",
   "assetGroups": [
     {
@@ -8,13 +8,13 @@
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "/spacecoffee/es2015-polyfills.c5dd28b362270c767b34.js",
         "/spacecoffee/favicon.ico",
         "/spacecoffee/index.html",
-        "/spacecoffee/main.a3e01fdc5cd1cd1f0072.js",
-        "/spacecoffee/polyfills.8bbb231b43165d65d357.js",
-        "/spacecoffee/runtime.26209474bfa8dc87a77c.js",
-        "/spacecoffee/styles.50500af94a8368c6f946.css"
+        "/spacecoffee/main.7c4c0d82d7a66dc9a158.js",
+        "/spacecoffee/polyfills-es5.3e6f80ae32678cce3346.js",
+        "/spacecoffee/polyfills.21bd8654fc65ff20bae1.js",
+        "/spacecoffee/runtime.7d7e9038a1cdbceb3d53.js",
+        "/spacecoffee/styles.24f32ad78cbd380db59e.css"
       ],
       "patterns": []
     },
@@ -45,13 +45,13 @@
     "/spacecoffee/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
     "/spacecoffee/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/spacecoffee/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "/spacecoffee/es2015-polyfills.c5dd28b362270c767b34.js": "b7a81c61d32b0b12737f0c13f45973ba391cd7f9",
     "/spacecoffee/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/spacecoffee/index.html": "1d564d51c0e7c4f858019eb088e63405b72fd71f",
-    "/spacecoffee/main.a3e01fdc5cd1cd1f0072.js": "6037c24b2bb0700ce37bbf51eb3ef7c992913e1e",
-    "/spacecoffee/polyfills.8bbb231b43165d65d357.js": "ffa449995bf2eba2ccd0a002417214f7eb75e7b5",
-    "/spacecoffee/runtime.26209474bfa8dc87a77c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
-    "/spacecoffee/styles.50500af94a8368c6f946.css": "93949a6ea8886db8e02beca6f4c5da8eade8b176"
+    "/spacecoffee/index.html": "92e95e83d8a88a73646f627fd9972e389b1d471d",
+    "/spacecoffee/main.7c4c0d82d7a66dc9a158.js": "3ea8abbe03d14b52d229f9f1c7b66de66c8c509f",
+    "/spacecoffee/polyfills-es5.3e6f80ae32678cce3346.js": "b1f93ab7008e8884fca369c8ba75da0440fddc3d",
+    "/spacecoffee/polyfills.21bd8654fc65ff20bae1.js": "00d68f6bec8622ed1a323563d0a30dd7a541895c",
+    "/spacecoffee/runtime.7d7e9038a1cdbceb3d53.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/spacecoffee/styles.24f32ad78cbd380db59e.css": "7f3fff48e978a98ca389a99de00e2f60d762faf1"
   },
   "navigationUrls": [
     {
