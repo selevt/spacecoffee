@@ -1,0 +1,61 @@
+<div class="dashboard">
+
+  <!-- <app-dashboard-state [state]="state"></app-dashboard-state> -->
+  <app-dashboard-state class="state"></app-dashboard-state>
+
+  <!-- Change Progress -->
+  <div class="actions">
+    <ng-container *ngIf="state === State.IDLE">
+      <button mat-raised-button color="primary" (click)="start()">Start</button>
+    </ng-container>
+    <ng-container *ngIf="state === State.STARTED">
+      <button mat-raised-button color="primary" (click)="pause()">Pause</button>
+      <button mat-raised-button color="warn" (click)="stop()">Stop</button>
+    </ng-container>
+    <ng-container *ngIf="state === State.PAUSED">
+      <button mat-raised-button color="primary" (click)="resume()">Resume</button>
+      <button mat-raised-button color="warn" (click)="stop()">Stop</button>
+    </ng-container>
+  </div>
+  <div class="spacer"></div>
+  <mat-accordion class="example-headers-align">
+    <!-- <div class="pauses">
+      <ul>
+        <li
+          v-for="pause in pauses"
+          :key="pause.start"
+        >{{ _timeToDisplay(pause.end - pause.start) }}</li>
+      </ul>
+    </div>-->
+    <mat-expansion-panel *ngIf="appState.history.length > 0" class="log history">
+      <mat-expansion-panel-header>History</mat-expansion-panel-header>
+      <app-dashboard-history></app-dashboard-history>
+    </mat-expansion-panel>
+    <!-- <div class="history">{{ history }}</div> -->
+    <mat-expansion-panel class="import">
+      <mat-expansion-panel-header>
+        <mat-panel-title>Import</mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <div>
+        <textarea [(ngModel)]="importValue" placeholder="Paste data here"></textarea>
+      </div>
+      <div *ngIf="appState.history.length > 0" class="warning">⚠️ Warning: Existing data will be overridden!</div>
+      <div>
+        <button mat-raised-button (click)="importHistory()">Import</button>
+      </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel class="export">
+      <mat-expansion-panel-header>Export</mat-expansion-panel-header>
+
+      <div>
+        <button mat-raised-button (click)="exportHistory()">Export</button>
+      </div>
+      <div *ngIf="exportValue" class="exportValue">
+        <textarea [(ngModel)]="exportValue" readonly></textarea>
+        <button mat-icon-button *ngIf="navigator.clipboard" (click)="navigator.clipboard.writeText(exportValue)">📋</button>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <button mat-raised-button color="accent" *ngIf="pwa.canPrompt" (click)="addToHomeScreen()">Add to home screen</button>
+</div>

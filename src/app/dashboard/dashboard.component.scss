@@ -1,0 +1,55 @@
+/* main layout */
+.dashboard {
+  height: calc(100% - 56px);
+  display: flex;
+  flex-direction: column;
+
+  .state, .actions {
+      padding: 0 16px;
+  }
+  .state {
+      margin-top: 12px;
+  }
+}
+
+.spacer {
+  flex: 1;
+}
+
+.actions {
+  margin-top: 20px;
+  display: flex;
+}
+
+.actions button {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.actions button:first-child {
+  margin-left: 0px;
+}
+
+.warning {
+  color: darkred;
+}
+
+.import button,
+.import textarea,
+.export button,
+.export textarea {
+  width: 100%;
+}
+
+.exportValue {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+
+    textarea {
+        flex: 1;
+    }
+    button {
+        width: 30px;
+    }
+}

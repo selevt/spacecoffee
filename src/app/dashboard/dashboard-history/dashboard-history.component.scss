@@ -1,0 +1,30 @@
+.entry {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+
+  height: 40px;
+  transition: .4s;
+
+  .left  {
+      width: calc(100% - 60px);
+  }
+  .right {
+      width: 60px;
+      text-align: right;
+  }
+}
+.entry.removed {
+      height: 0;
+      margin-top: 0;
+      overflow: hidden;
+}
+
+.entry:first-child {
+  margin-top: 0;
+}
+
+.period {
+  color: #666;
+  font-size: 0.8em;
+}

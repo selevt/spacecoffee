@@ -1,0 +1,48 @@
+.stateContainer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3em;
+}
+
+.workTime,
+.pauseTime {
+  width: 100%;
+}
+
+.pauseTime {
+  text-align: end;
+}
+
+.startTime {
+  color: #666;
+  font-size: 0.8em;
+}
+
+
+.statehl {
+  margin-top: 8px;
+  width: calc(50% - 5px);
+  height: 5px;
+  background-color: #107e3e;
+  position: relative;
+  left: 0;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.stateSTARTED .pauseTime {
+  filter: saturate(30%);
+  transition: all 0.5s;
+}
+
+.statePAUSED {
+  .workTime {
+    filter: saturate(30%);
+    transition: all 0.5s;
+  }
+
+  .statehl {
+    left: calc(50% + 5px);
+    background-color: orange;
+  }
+}

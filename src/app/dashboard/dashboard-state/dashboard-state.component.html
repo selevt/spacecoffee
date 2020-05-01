@@ -1,0 +1,17 @@
+<div class="dashboardState" [ngClass]="['state' + appState.state]">
+  <div class="state">
+    <ng-container *ngIf="appState.state !== State.IDLE">
+      <div class="startTime">{{ appState.startTime | date:'short' }}</div>
+      <div class="stateContainer">
+        <div class="workTime">👩‍🚀 {{ totalWorkDisplay }}</div>
+
+        <div class="pauseTime">
+          <ng-container *ngIf="appState.state === State.PAUSED; else notPaused">{{ currentPauseDisplay }}</ng-container>
+          <ng-template #notPaused>{{ totalPausesDisplay }}</ng-template>
+          <span> ☕️</span>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  <div *ngIf="appState.state !== State.IDLE" class="statehl"></div>
+</div>

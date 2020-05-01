@@ -1,0 +1,19 @@
+<div>
+  <div class="entry" *ngFor="let hist of history">
+    <!-- <div class="period">{{ _dateToDisplay(hist.start) }} - {{ _dateToDisplay(hist.end) }}</div> -->
+    <div class="left">
+      <div class="period">{{ dateToDisplay(hist.start) }} - {{ dateToDisplay(hist.end) }}</div>
+      <div>
+        <!-- 👩‍🚀 {{ _timeToDisplay(_histForDisp(hist).work) }}
+    ☕️ {{ _timeToDisplay(_histForDisp(hist).pause) }} -->
+        👩‍🚀 {{ displayWork(hist) }}
+        ☕️ {{ displayPause(hist) }}
+      </div>
+    </div>
+    <div class="right">
+      <button mat-icon-button (click)="delete($event, hist)">
+        🗑
+      </button>
+    </div>
+  </div>
+</div>
